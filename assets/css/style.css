@@ -3,7 +3,70 @@
 .centerbox {
   height: 400px;
   width: 960px;
-  background-color: rgb(9, 161, 29);
+  background-color: #ffffff;
+  border: #dddddd;
   margin: auto;
 }
 
+.container {
+    width: 90%;
+    margin: 0 auto;
+    border: #cccccc;
+}
+
+header { background: #ffffff}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav {float: right;}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+
+}
+
+nav ul > li > a {
+    color: #777777;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+nav ul > li > a:hover {
+    color: #000000;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: #777777;
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
