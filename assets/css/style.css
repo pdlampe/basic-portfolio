@@ -6,12 +6,19 @@
   background-color: #ffffff;
   border: #dddddd;
   margin: auto;
-  padding-top: 30px;
+  padding-top: 5px;
 }
 
 .container {
     width: 80%;
     margin: 0 auto;
+}
+
+.hrhorizon {
+    width: 920px;
+    color:#666666 solid 20px;
+    padding-bottom: -10px;
+
 }
 
 header { 
@@ -36,9 +43,17 @@ header::after {
     padding: 0px 0;
 }
 
+.headingtext {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 24px;
+    
+}
+
 .profilepicture {
     padding: 0px 20px 0px 25px;
     vertical-align: middle;
+    float: left;
+
 }
 
 nav {
