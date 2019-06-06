@@ -6,15 +6,24 @@
   background-color: #ffffff;
   border: #dddddd;
   margin: auto;
+  padding-top: 30px;
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
-    border: #cccccc;
 }
 
-header { background: #ffffff}
+header { 
+    background: #ffffff;
+    margin-top:-10px;
+    width:100%;
+    margin-left:-10px;
+    margin-right:10px;
+    border-bottom: #cccccc solid 10px;
+  padding-right:20px;
+
+}
 
 header::after {
     content: '';
@@ -24,10 +33,13 @@ header::after {
 
 .logo {
     float: left;
-    padding: 10px 0;
+    padding: 0px 0;
 }
 
-nav {float: right;}
+nav {
+    float: right;
+  
+}
 
 nav ul {
     margin: 0;
@@ -39,7 +51,8 @@ nav li {
     display: inline-block;
     margin-left: 70px;
     padding-top: 23px;
-    position: relative;
+    border-left:1px solid #efefef;
+
 
 }
 
@@ -68,5 +81,5 @@ nav a::before {
 }
 
 nav a:hover::before {
-    width: 100%;
+    width: 7%;
 }
